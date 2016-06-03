@@ -3,8 +3,18 @@ using System.Collections;
 
 public class Modo1Puntos : MonoBehaviour {
 
+	public int mostrador;
+	public admobscript admob;
+
 	public GameObject MenuVictoria;
 	public static bool jugar;
+	public static bool Victoria;
+
+	public GameObject GUI1;
+	public GameObject GUI2;
+	public GameObject GUI3;
+	public GameObject GUI4;
+	public GameObject GUI5;
 
 	public string Final;
 	public string FinalTemp;
@@ -93,6 +103,7 @@ public class Modo1Puntos : MonoBehaviour {
 	public int MonedasWin;
 
 	public AudioClip PerdisteAudio;
+	public AudioClip GanasteAudio;
 
 
 	void Start(){
@@ -130,7 +141,7 @@ public class Modo1Puntos : MonoBehaviour {
 			Id5="5";
 			Id6="6";
 			Id7="7";
-			FinalTemp = "4136752";
+			FinalTemp = "5763124";
 			break;
 		case 3 :
 			Id1="1";
@@ -150,7 +161,7 @@ public class Modo1Puntos : MonoBehaviour {
 			Id5="5";
 			Id6="6";
 			Id7="7";
-			FinalTemp = "4213675";
+			FinalTemp = "3125476";
 			break;
 		case 5 :
 			Id1="1";
@@ -170,7 +181,7 @@ public class Modo1Puntos : MonoBehaviour {
 			Id5="5";
 			Id6="6";
 			Id7="7";
-			FinalTemp = "3674125";
+			FinalTemp = "7631452";
 			break;
 		case 7 :
 			Id1="1";
@@ -190,7 +201,7 @@ public class Modo1Puntos : MonoBehaviour {
 			Id5="5";
 			Id6="6";
 			Id7="7";
-			FinalTemp = "7645213";
+			FinalTemp = "6312574";
 			break;
 		case 9 :
 			Id1="1";
@@ -280,7 +291,7 @@ public class Modo1Puntos : MonoBehaviour {
 			Id5="5";
 			Id6="6";
 			Id7="7";
-			FinalTemp = "1243675";
+			FinalTemp = "5476312";
 			break;
 		case 18 :
 			Id1="1";
@@ -312,6 +323,107 @@ public class Modo1Puntos : MonoBehaviour {
 			Id7="7";
 			FinalTemp = "3142576";
 			break;
+		case 21 :
+			Id1="1";
+			Id2="2";
+			Id3="3";
+			Id4="4";
+			Id5="5";
+			Id6="6";
+			Id7="7";
+			FinalTemp = "4675213";
+			break;
+		case 22 :
+			Id1="1";
+			Id2="2";
+			Id3="3";
+			Id4="4";
+			Id5="5";
+			Id6="6";
+			Id7="7";
+			FinalTemp = "5476312";
+			break;
+		case 23 :
+			Id1="1";
+			Id2="2";
+			Id3="3";
+			Id4="4";
+			Id5="5";
+			Id6="6";
+			Id7="7";
+			FinalTemp = "7546312";
+			break;
+		case 24 :
+			Id1="1";
+			Id2="2";
+			Id3="3";
+			Id4="4";
+			Id5="5";
+			Id6="6";
+			Id7="7";
+			FinalTemp = "2574136";
+			break;
+		case 25 :
+			Id1="1";
+			Id2="2";
+			Id3="3";
+			Id4="4";
+			Id5="5";
+			Id6="6";
+			Id7="7";
+			FinalTemp = "3146752";
+			break;
+		case 26 :
+			Id1="1";
+			Id2="2";
+			Id3="3";
+			Id4="4";
+			Id5="5";
+			Id6="6";
+			Id7="7";
+			FinalTemp = "7643125";
+			break;
+		case 27 :
+			Id1="1";
+			Id2="2";
+			Id3="3";
+			Id4="4";
+			Id5="5";
+			Id6="6";
+			Id7="7";
+			FinalTemp = "5247631";
+			break;
+		case 28 :
+			Id1="1";
+			Id2="2";
+			Id3="3";
+			Id4="4";
+			Id5="5";
+			Id6="6";
+			Id7="7";
+			FinalTemp = "6743125";
+			break;
+		case 29 :
+			Id1="1";
+			Id2="2";
+			Id3="3";
+			Id4="4";
+			Id5="5";
+			Id6="6";
+			Id7="7";
+			FinalTemp = "1342576";
+			break;
+		case 30 :
+			Id1="1";
+			Id2="2";
+			Id3="3";
+			Id4="4";
+			Id5="5";
+			Id6="6";
+			Id7="7";
+			FinalTemp = "7452136";
+			break;
+
 	}
 
 	}
@@ -363,10 +475,36 @@ public class Modo1Puntos : MonoBehaviour {
 				if(id1Bool && id2Bool && id3Bool && id4Bool && id5Bool && id6Bool && id7Bool){
 					if(Final == FinalTemp){
 						Debug.Log("Ganaste");
+						int Level = PlayerPrefs.GetInt ("level");
+						Level++;
+						PlayerPrefs.SetInt ("level", Level);
+						if (PlayerPrefs.GetInt ("level") == 30) {
+							PlayerPrefs.SetInt ("Desblo-Nivel2-Ver1", 1);
+							PlayerPrefs.SetInt ("Stop-Nivel1-Ver1", 1);
+							PlayerPrefs.SetInt ("Desblo-Nivel1-Ver1", 0);
+						}
+						Modo1Puntos.Victoria = false;
+						CountdownTimer_CSHARP.TerminoPartida = false;
 						MonedasTemp = PlayerPrefs.GetInt("Monedas");
-						MonedasTemp += 4;
+						MonedasTemp += 2;
 						PlayerPrefs.SetInt("Monedas",MonedasTemp);
+						mostrador = PlayerPrefs.GetInt ("MostrarInterstitial");
+						if (mostrador >= 5) {
+							admob.ShowInterstitial ();
+							PlayerPrefs.SetInt("MostrarInterstitial", 0);
+						}
 						jugar = false;
+						GUI1.SetActive (false);
+						GUI2.SetActive (false);
+						GUI3.SetActive (false);
+						GUI4.SetActive (false);
+						GUI5.SetActive (false);
+						CountdownTimer_CSHARP.TerminoPartida = true;
+						Victoria = true;
+ 						GetComponent<AudioSource>().clip = GanasteAudio;
+						if (!GetComponent<AudioSource> ().isPlaying) {
+							GetComponent<AudioSource> ().Play ();
+						}
 						MenuVictoria.SetActive(true);
 					}else{
 						GetComponent<AudioSource>().clip = PerdisteAudio;

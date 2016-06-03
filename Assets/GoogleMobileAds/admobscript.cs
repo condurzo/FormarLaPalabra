@@ -11,7 +11,7 @@ public class admobscript : MonoBehaviour {
 	private InterstitialAd interstitial;
 	
 	void Start(){
-		DontDestroyOnLoad(this.gameObject.transform);
+		//DontDestroyOnLoad(this.gameObject.transform);
 		RequestBanner ();
 		RequestInterstitial ();
 

@@ -4,7 +4,8 @@ using System.Collections;
 public class Modo2Ayuda : MonoBehaviour {
 	public int Metodo;
 	public int Level;
-
+	public int tempMonedas;
+	public int Monedas;
 	public string AyudaL1;
 	public string AyudaL2;
 	public string AyudaL3;
@@ -5492,6 +5493,8 @@ public class Modo2Ayuda : MonoBehaviour {
 	#region Metodo1
 	/////////// METODO 1
 	void Ayuda () {
+		Monedas = PlayerPrefs.GetInt ("Monedas");
+		if (Monedas >= 3) {
 		if(Metodo==1){
 			//Abogado
 			RandomTemp1 = PlayerPrefs.GetInt("M2-1-1");
@@ -6751,7 +6754,10 @@ public class Modo2Ayuda : MonoBehaviour {
 			Detec1.SetActive(false);
 			Detec2.SetActive(true);
 		}
-		Application.LoadLevel ("Nivel2");
+			tempMonedas = Monedas - 3;
+			PlayerPrefs.SetInt ("Monedas", tempMonedas);
+			Application.LoadLevel ("Nivel2");
+		}
 
 
 	}
@@ -6760,6 +6766,8 @@ public class Modo2Ayuda : MonoBehaviour {
 	#region Metodo2
 	/////////// METODO 2
 	void Ayuda2 () {
+			Monedas = PlayerPrefs.GetInt ("Monedas");
+			if (Monedas >= 5) {
 		if(Metodo==1){
 			//Abogado
 			RandomTemp2 = PlayerPrefs.GetInt("M2-1-2");
@@ -8019,7 +8027,10 @@ public class Modo2Ayuda : MonoBehaviour {
 			Detec2.SetActive(false);
 			Detec3.SetActive(true);
 		}
-		Application.LoadLevel ("Nivel2");
+			tempMonedas = Monedas - 5;
+			PlayerPrefs.SetInt ("Monedas", tempMonedas);
+			Application.LoadLevel ("Nivel2");
+		}
 	}
 
 
@@ -8029,6 +8040,8 @@ public class Modo2Ayuda : MonoBehaviour {
 	#region Metodo3
 	/////////// METODO 3
 	void Ayuda3 () {
+				Monedas = PlayerPrefs.GetInt ("Monedas");
+				if (Monedas >= 8) {
 		if(Metodo==1){
 			//Abogado
 			RandomTemp3 = PlayerPrefs.GetInt("M2-1-3");
@@ -9288,7 +9301,10 @@ public class Modo2Ayuda : MonoBehaviour {
 			Detec3.SetActive(false);
 			Detec4.SetActive(true);
 		}
-		Application.LoadLevel ("Nivel2");
+			tempMonedas = Monedas - 8;
+			PlayerPrefs.SetInt ("Monedas", tempMonedas);
+			Application.LoadLevel ("Nivel2");
+		}
 	}
 
 	#endregion
@@ -9296,6 +9312,8 @@ public class Modo2Ayuda : MonoBehaviour {
 	#region Metodo4
 	/////////// METODO 4
 	void Ayuda4 () {
+					Monedas = PlayerPrefs.GetInt ("Monedas");
+					if (Monedas >= 12) {
 		if(Metodo==1){
 			//Abogado
 			RandomTemp4 = PlayerPrefs.GetInt("M2-1-4");
@@ -10555,13 +10573,18 @@ public class Modo2Ayuda : MonoBehaviour {
 			Detec4.SetActive(false);
 			Detec5.SetActive(true);
 		}
-		Application.LoadLevel ("Nivel2");
+			tempMonedas = Monedas - 12;
+			PlayerPrefs.SetInt ("Monedas", tempMonedas);
+			Application.LoadLevel ("Nivel2");
+		}
 	}
 	#endregion
 
 	#region Metodo5
 	/////////// METODO 5
 	void Ayuda5 () {
+						Monedas = PlayerPrefs.GetInt ("Monedas");
+						if (Monedas >= 15) {
 		if(Metodo==1){
 			//Abogado
 			RandomTemp5 = PlayerPrefs.GetInt("M2-1-5");
@@ -11849,7 +11872,10 @@ public class Modo2Ayuda : MonoBehaviour {
 			Detec6.SetActive(true);
 
 		}
-		Application.LoadLevel ("Nivel2");
+			tempMonedas = Monedas - 15;
+			PlayerPrefs.SetInt ("Monedas", tempMonedas);
+			Application.LoadLevel ("Nivel2");
+		}
 	}
 	#endregion
 

@@ -53,21 +53,59 @@ public class Modo2 : MonoBehaviour {
 
 	public string Palabra;
 
+	public int mostrador;
+
 	void Avanzar(){
-		Level = PlayerPrefs.GetInt("level2");
-		Level ++;
-		PlayerPrefs.SetInt("level2",Level);
-		SceneManager.LoadScene ("Nivel2");
+		mostrador = PlayerPrefs.GetInt ("MostrarInterstitial");
+		mostrador++;
+		PlayerPrefs.SetInt ("MostrarInterstitial", mostrador);
+		PlayerPrefs.SetInt ("PerdioPrimera",0);
+		if (PlayerPrefs.GetInt ("level2") == 30) {
+			PlayerPrefs.SetInt ("Desblo-Nivel3-Ver1", 1);
+			PlayerPrefs.SetInt ("Stop-Nivel2-Ver1", 1);
+			PlayerPrefs.SetInt ("Desblo-Nivel2-Ver1", 0);
+			Modo1Puntos.Victoria = false;
+			CountdownTimer_CSHARP.TerminoPartida = false;
+			Application.LoadLevel ("SelectorMundos");
+		} else {
+			Modo1Puntos.Victoria = false;
+			CountdownTimer_CSHARP.TerminoPartida = false;
+			SceneManager.LoadScene ("Nivel2");
+		}
 	}
 	void Atras(){
-		Level = PlayerPrefs.GetInt("level2");
-		Level --;
-		PlayerPrefs.SetInt("level2",Level);
-		SceneManager.LoadScene ("Nivel2");
+		mostrador = PlayerPrefs.GetInt ("MostrarInterstitial");
+		mostrador++;
+		PlayerPrefs.SetInt ("MostrarInterstitial", mostrador);
+		PlayerPrefs.SetInt ("PerdioPrimera",0);
+		if (PlayerPrefs.GetInt ("level2") == 30) {
+			PlayerPrefs.SetInt ("Desblo-Nivel3-Ver1", 1);
+			PlayerPrefs.SetInt ("Stop-Nivel2-Ver1", 1);
+			PlayerPrefs.SetInt ("Desblo-Nivel2-Ver1", 0);
+			Modo1Puntos.Victoria = false;
+			CountdownTimer_CSHARP.TerminoPartida = false;
+			Application.LoadLevel ("SelectorMundos");
+		} else {
+			Modo1Puntos.Victoria = false;
+			CountdownTimer_CSHARP.TerminoPartida = false;
+			SceneManager.LoadScene ("SelectorMundos");
+		}
 	}
 
+	void AtrasLose(){
+		Modo1Puntos.Victoria = false;
+		CountdownTimer_CSHARP.TerminoPartida = false;
+		Application.LoadLevel ("SelectorMundos");
+	}
+
+	void ReloadLevel(){
+		Modo1Puntos.Victoria = false;
+		CountdownTimer_CSHARP.TerminoPartida = false;
+		Application.LoadLevel("Nivel2");
+	}
 
 	void Start () {
+
 		Level = PlayerPrefs.GetInt("level2");
 		switch (Level){
 		case 1 :
@@ -352,9 +390,9 @@ public class Modo2 : MonoBehaviour {
 			RomboId03.GetComponent<Renderer>().material = LetraO;
 			RomboId04.GetComponent<Renderer>().material = LetraR;
 			RomboId05.GetComponent<Renderer>().material = LetraR;
-			RomboId06.GetComponent<Renderer>().material = LetraC;
+			RomboId06.GetComponent<Renderer>().material = LetraR;
 			RomboId07.GetComponent<Renderer>().material = LetraE;
-			RomboId08.GetComponent<Renderer>().material = LetraR;
+			RomboId08.GetComponent<Renderer>().material = LetraC;
 			break;
 		case 26:
 			Palabra = "Masticar";
@@ -416,8 +454,5 @@ public class Modo2 : MonoBehaviour {
 
 	}
 
-	// Update is called once per frame
-	void Update () {
 
-	}
 }

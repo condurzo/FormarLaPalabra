@@ -6,13 +6,23 @@ public class Splash : MonoBehaviour {
 	public AnimacionBolita bolita;
 	public AudioClip sonido;
 	public bool activeSonido;
+	public bool Termino;
+
+	void Awake(){
+		Termino = false;
+		bolita.enabled = true;
+	}
+
 	void Start(){
 
-//		if(PlayerPrefs.GetInt("UnaVez")==0){
-//			PlayerPrefs.SetInt("Elijio",1);
-//			PlayerPrefs.SetInt("UnaVez",1);
-//		}
+		if(PlayerPrefs.GetInt("UnaVezMonedas")==0){
+			PlayerPrefs.SetInt ("Desblo-Nivel1-Ver1", 1);
+			PlayerPrefs.SetInt("Monedas",20);
+			PlayerPrefs.SetInt ("Vidas", 5);
+			PlayerPrefs.SetInt("UnaVezMonedas",1);
+		}
 
+	
 
 		GetComponent<AudioSource>().clip = sonido;
 
@@ -23,10 +33,13 @@ public class Splash : MonoBehaviour {
 	}
 
 	void Update () {
-		if(AnimacionBolita.currentPathPercent>=1){
-			bolita.enabled = false;
+		if (Termino) {
+			if (AnimacionBolita.currentPathPercent >= 1) {
+				bolita.enabled = false;
+			}
 		}
 		if( Tiempo >= 1.3f){
+			Termino = true;
 			if(!GetComponent<AudioSource>().isPlaying){
 				GetComponent<AudioSource>().Play();
 			}
@@ -34,10 +47,16 @@ public class Splash : MonoBehaviour {
 
 		Tiempo += Time.deltaTime;
 		if( Tiempo >= 3.5f){
+			
 			System.GC.Collect();
 			System.GC.WaitForPendingFinalizers();
 			Resources.UnloadUnusedAssets();
-			Application.LoadLevel("SelectorMundos");
+
+			if (PlayerPrefs.GetInt ("Tutorial") == 0) {
+				Application.LoadLevel ("Tutorial");
+			} else {
+				Application.LoadLevel ("SelectorMundos");
+			}
 		}
 	}
 }

@@ -2,9 +2,19 @@
 using System.Collections;
 
 public class Modo2Puntos : MonoBehaviour {
+	
+	public int mostrador;
+	public admobscript admob;
 
 	public GameObject MenuVictoria;
 	public static bool jugar;
+	public static bool Victoria;
+
+	public GameObject GUI1;
+	public GameObject GUI2;
+	public GameObject GUI3;
+	public GameObject GUI4;
+	public GameObject GUI5;
 
 	public string Final;
 	public string FinalTemp;
@@ -101,7 +111,7 @@ public class Modo2Puntos : MonoBehaviour {
 	public int MonedasWin;
 
 	public AudioClip PerdisteAudio;
-
+	public AudioClip GanasteAudio;
 
 	void Start(){
 
@@ -218,7 +228,7 @@ public class Modo2Puntos : MonoBehaviour {
 			Id6="6";
 			Id7="7";
 			Id8="8";
-			FinalTemp = "85321476";
+			FinalTemp = "85321467";
 			break;
 		case 10 :
 			Id1="1";
@@ -394,7 +404,7 @@ public class Modo2Puntos : MonoBehaviour {
 			Id6="6";
 			Id7="7";
 			Id8="8";
-			FinalTemp = "41235678";
+			FinalTemp = "41235876";
 			break;
 		case 26 :
 			Id1="1";
@@ -506,10 +516,36 @@ public class Modo2Puntos : MonoBehaviour {
 				if(id1Bool && id2Bool && id3Bool && id4Bool && id5Bool && id6Bool && id7Bool && id8Bool){
 					if(Final == FinalTemp){
 						Debug.Log("Ganaste");
+						int Level = PlayerPrefs.GetInt ("level2");
+						Level++;
+						PlayerPrefs.SetInt ("level2", Level);
+						if (PlayerPrefs.GetInt ("level2") == 30) {
+							PlayerPrefs.SetInt ("Desblo-Nivel3-Ver1", 1);
+							PlayerPrefs.SetInt ("Stop-Nivel2-Ver1", 1);
+							PlayerPrefs.SetInt ("Desblo-Nivel2-Ver1", 0);
+						}
+						Modo1Puntos.Victoria = false;
+						CountdownTimer_CSHARP.TerminoPartida = false;
 						MonedasTemp = PlayerPrefs.GetInt("Monedas");
-						MonedasTemp += 1;
+						MonedasTemp += 2;
 						PlayerPrefs.SetInt("Monedas",MonedasTemp);
+						mostrador = PlayerPrefs.GetInt ("MostrarInterstitial");
+						if (mostrador >= 5) {
+							admob.ShowInterstitial ();
+							PlayerPrefs.SetInt("MostrarInterstitial", 0);
+						}
 						jugar = false;
+						GUI1.SetActive (false);
+						GUI2.SetActive (false);
+						GUI3.SetActive (false);
+						GUI4.SetActive (false);
+						GUI5.SetActive (false);
+						CountdownTimer_CSHARP.TerminoPartida = true;
+						Victoria = true;
+						GetComponent<AudioSource>().clip = GanasteAudio;
+						if (!GetComponent<AudioSource> ().isPlaying) {
+							GetComponent<AudioSource> ().Play ();
+						}
 						MenuVictoria.SetActive(true);
 					}else{
 						GetComponent<AudioSource>().clip = PerdisteAudio;

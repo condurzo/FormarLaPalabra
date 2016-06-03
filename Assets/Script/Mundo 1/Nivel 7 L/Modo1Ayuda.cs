@@ -4,7 +4,8 @@ using System.Collections;
 public class Modo1Ayuda : MonoBehaviour {
 	public int Metodo;
 	public int Level;
-
+	public int tempMonedas;
+	public int Monedas;
 	public string AyudaL1;
 	public string AyudaL2;
 	public string AyudaL3;
@@ -529,25 +530,25 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp1){
 			case 1:
-				Letra1.text = "S";
+				Letra1.text = "P";
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "L";
 				break;
 			case 3:
-				Letra3.text = "N";
+				Letra3.text = "A";
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "N";
 				break;
 			case 5:
-				Letra5.text = "U";
+				Letra5.text = "E";
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "T";
 				break;
 			case 7:
-				Letra7.text = "L";
+				Letra7.text = "A";
 				break;
 			}
 			}
@@ -559,25 +560,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp2){
 				case 1:
-					Letra1.text = "S";
+					Letra1.text = "P";
 					break;
 				case 2:
-					Letra2.text = "E";
+					Letra2.text = "L";
 					break;
 				case 3:
-					Letra3.text = "N";
+					Letra3.text = "A";
 					break;
 				case 4:
-					Letra4.text = "S";
+					Letra4.text = "N";
 					break;
 				case 5:
-					Letra5.text = "U";
+					Letra5.text = "E";
 					break;
 				case 6:
-					Letra6.text = "A";
+					Letra6.text = "T";
 					break;
 				case 7:
-					Letra7.text = "L";
+					Letra7.text = "A";
 					break;
 				}
 			}
@@ -589,25 +590,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp3){
 				case 1:
-					Letra1.text = "S";
+					Letra1.text = "P";
 					break;
 				case 2:
-					Letra2.text = "E";
+					Letra2.text = "L";
 					break;
 				case 3:
-					Letra3.text = "N";
+					Letra3.text = "A";
 					break;
 				case 4:
-					Letra4.text = "S";
+					Letra4.text = "N";
 					break;
 				case 5:
-					Letra5.text = "U";
+					Letra5.text = "E";
 					break;
 				case 6:
-					Letra6.text = "A";
+					Letra6.text = "T";
 					break;
 				case 7:
-					Letra7.text = "L";
+					Letra7.text = "A";
 					break;
 				}
 			}
@@ -618,25 +619,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp4){
 				case 1:
-					Letra1.text = "S";
+					Letra1.text = "P";
 					break;
 				case 2:
-					Letra2.text = "E";
+					Letra2.text = "L";
 					break;
 				case 3:
-					Letra3.text = "N";
+					Letra3.text = "A";
 					break;
 				case 4:
-					Letra4.text = "S";
+					Letra4.text = "N";
 					break;
 				case 5:
-					Letra5.text = "U";
+					Letra5.text = "E";
 					break;
 				case 6:
-					Letra6.text = "A";
+					Letra6.text = "T";
 					break;
 				case 7:
-					Letra7.text = "L";
+					Letra7.text = "A";
 					break;
 				}
 			}
@@ -648,25 +649,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp5){
 				case 1:
-					Letra1.text = "S";
+					Letra1.text = "P";
 					break;
 				case 2:
-					Letra2.text = "E";
+					Letra2.text = "L";
 					break;
 				case 3:
-					Letra3.text = "N";
+					Letra3.text = "A";
 					break;
 				case 4:
-					Letra4.text = "S";
+					Letra4.text = "N";
 					break;
 				case 5:
-					Letra5.text = "U";
+					Letra5.text = "E";
 					break;
 				case 6:
-					Letra6.text = "A";
+					Letra6.text = "T";
 					break;
 				case 7:
-					Letra7.text = "L";
+					Letra7.text = "A";
 					break;
 				}
 			}
@@ -1884,25 +1885,25 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp1){
 			case 1:
-				Letra1.text = "C";
+				Letra1.text = "N";
 				break;
 			case 2:
 				Letra2.text = "U";
 				break;
 			case 3:
-				Letra3.text = "E";
+				Letra3.text = "B";
 				break;
 			case 4:
-				Letra4.text = "N";
+				Letra4.text = "L";
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				break;
 			case 6:
-				Letra6.text = "O";
+				Letra6.text = "D";
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "O";
 				break;
 			}
 			}
@@ -1913,25 +1914,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp2){
 				case 1:
-					Letra1.text = "C";
+					Letra1.text = "N";
 					break;
 				case 2:
 					Letra2.text = "U";
 					break;
 				case 3:
-					Letra3.text = "E";
+					Letra3.text = "B";
 					break;
 				case 4:
-					Letra4.text = "N";
+					Letra4.text = "L";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "A";
 					break;
 				case 6:
-					Letra6.text = "O";
+					Letra6.text = "D";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "O";
 					break;
 				}
 			}
@@ -1942,25 +1943,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp3){
 				case 1:
-					Letra1.text = "C";
+					Letra1.text = "N";
 					break;
 				case 2:
 					Letra2.text = "U";
 					break;
 				case 3:
-					Letra3.text = "E";
+					Letra3.text = "B";
 					break;
 				case 4:
-					Letra4.text = "N";
+					Letra4.text = "L";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "A";
 					break;
 				case 6:
-					Letra6.text = "O";
+					Letra6.text = "D";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "O";
 					break;
 				}
 			}
@@ -1971,25 +1972,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp4){
 				case 1:
-					Letra1.text = "C";
+					Letra1.text = "N";
 					break;
 				case 2:
 					Letra2.text = "U";
 					break;
 				case 3:
-					Letra3.text = "E";
+					Letra3.text = "B";
 					break;
 				case 4:
-					Letra4.text = "N";
+					Letra4.text = "L";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "A";
 					break;
 				case 6:
-					Letra6.text = "O";
+					Letra6.text = "D";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "O";
 					break;
 				}
 			}
@@ -2000,25 +2001,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp5){
 				case 1:
-					Letra1.text = "C";
+					Letra1.text = "N";
 					break;
 				case 2:
 					Letra2.text = "U";
 					break;
 				case 3:
-					Letra3.text = "E";
+					Letra3.text = "B";
 					break;
 				case 4:
-					Letra4.text = "N";
+					Letra4.text = "L";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "A";
 					break;
 				case 6:
-					Letra6.text = "O";
+					Letra6.text = "D";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "O";
 					break;
 				}
 			}
@@ -2184,25 +2185,25 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp1){
 			case 1:
-				Letra1.text = "P";
+				Letra1.text = "S";
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "A";
 				break;
 			case 3:
 				Letra3.text = "L";
 				break;
 			case 4:
-				Letra4.text = "O";
+				Letra4.text = "V";
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "J";
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "E";
 				break;
 			}
 			}
@@ -2213,25 +2214,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp2){
 				case 1:
-					Letra1.text = "P";
+					Letra1.text = "S";
 					break;
 				case 2:
-					Letra2.text = "E";
+					Letra2.text = "A";
 					break;
 				case 3:
 					Letra3.text = "L";
 					break;
 				case 4:
-					Letra4.text = "O";
+					Letra4.text = "V";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "A";
 					break;
 				case 6:
-					Letra6.text = "A";
+					Letra6.text = "J";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "E";
 					break;
 				}
 			}
@@ -2242,25 +2243,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp3){
 				case 1:
-					Letra1.text = "P";
+					Letra1.text = "S";
 					break;
 				case 2:
-					Letra2.text = "E";
+					Letra2.text = "A";
 					break;
 				case 3:
 					Letra3.text = "L";
 					break;
 				case 4:
-					Letra4.text = "O";
+					Letra4.text = "V";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "A";
 					break;
 				case 6:
-					Letra6.text = "A";
+					Letra6.text = "J";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "E";
 					break;
 				}
 			}
@@ -2271,25 +2272,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp4){
 				case 1:
-					Letra1.text = "P";
+					Letra1.text = "S";
 					break;
 				case 2:
-					Letra2.text = "E";
+					Letra2.text = "A";
 					break;
 				case 3:
 					Letra3.text = "L";
 					break;
 				case 4:
-					Letra4.text = "O";
+					Letra4.text = "V";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "A";
 					break;
 				case 6:
-					Letra6.text = "A";
+					Letra6.text = "J";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "E";
 					break;
 				}
 			}
@@ -2300,25 +2301,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp5){
 				case 1:
-					Letra1.text = "P";
+					Letra1.text = "S";
 					break;
 				case 2:
-					Letra2.text = "E";
+					Letra2.text = "A";
 					break;
 				case 3:
 					Letra3.text = "L";
 					break;
 				case 4:
-					Letra4.text = "O";
+					Letra4.text = "V";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "A";
 					break;
 				case 6:
-					Letra6.text = "A";
+					Letra6.text = "J";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "E";
 					break;
 				}
 			}
@@ -2334,25 +2335,25 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp1){
 			case 1:
-				Letra1.text = "B";
+				Letra1.text = "D";
 				break;
 			case 2:
-				Letra2.text = "A";
+				Letra2.text = "I";
 				break;
 			case 3:
-				Letra3.text = "T";
+				Letra3.text = "B";
 				break;
 			case 4:
-				Letra4.text = "A";
+				Letra4.text = "U";
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "J";
 				break;
 			case 6:
 				Letra6.text = "A";
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "R";
 				break;
 			}
 			}
@@ -2363,25 +2364,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp2){
 				case 1:
-					Letra1.text = "B";
+					Letra1.text = "D";
 					break;
 				case 2:
-					Letra2.text = "A";
+					Letra2.text = "I";
 					break;
 				case 3:
-					Letra3.text = "T";
+					Letra3.text = "B";
 					break;
 				case 4:
-					Letra4.text = "A";
+					Letra4.text = "U";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "J";
 					break;
 				case 6:
 					Letra6.text = "A";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "R";
 					break;
 				}
 			}
@@ -2392,25 +2393,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp3){
 				case 1:
-					Letra1.text = "B";
+					Letra1.text = "D";
 					break;
 				case 2:
-					Letra2.text = "A";
+					Letra2.text = "I";
 					break;
 				case 3:
-					Letra3.text = "T";
+					Letra3.text = "B";
 					break;
 				case 4:
-					Letra4.text = "A";
+					Letra4.text = "U";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "J";
 					break;
 				case 6:
 					Letra6.text = "A";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "R";
 					break;
 				}
 			}
@@ -2421,25 +2422,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp4){
 				case 1:
-					Letra1.text = "B";
+					Letra1.text = "D";
 					break;
 				case 2:
-					Letra2.text = "A";
+					Letra2.text = "I";
 					break;
 				case 3:
-					Letra3.text = "T";
+					Letra3.text = "B";
 					break;
 				case 4:
-					Letra4.text = "A";
+					Letra4.text = "U";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "J";
 					break;
 				case 6:
 					Letra6.text = "A";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "R";
 					break;
 				}
 			}
@@ -2450,25 +2451,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp5){
 				case 1:
-					Letra1.text = "B";
+					Letra1.text = "D";
 					break;
 				case 2:
-					Letra2.text = "A";
+					Letra2.text = "I";
 					break;
 				case 3:
-					Letra3.text = "T";
+					Letra3.text = "B";
 					break;
 				case 4:
-					Letra4.text = "A";
+					Letra4.text = "U";
 					break;
 				case 5:
-					Letra5.text = "T";
+					Letra5.text = "J";
 					break;
 				case 6:
 					Letra6.text = "A";
 					break;
 				case 7:
-					Letra7.text = "S";
+					Letra7.text = "R";
 					break;
 				}
 			}
@@ -2484,25 +2485,25 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp1){
 			case 1:
-				Letra1.text = "O";
+				Letra1.text = "C";
 				break;
 			case 2:
-				Letra2.text = "F";
+				Letra2.text = "A";
 				break;
 			case 3:
-				Letra3.text = "F";
+				Letra3.text = "R";
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "A";
 				break;
 			case 5:
-				Letra5.text = "I";
+				Letra5.text = "C";
 				break;
 			case 6:
-				Letra6.text = "D";
+				Letra6.text = "O";
 				break;
 			case 7:
-				Letra7.text = "E";
+				Letra7.text = "L";
 				break;
 			}
 			}
@@ -2513,25 +2514,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp2){
 				case 1:
-					Letra1.text = "O";
+					Letra1.text = "C";
 					break;
 				case 2:
-					Letra2.text = "F";
+					Letra2.text = "A";
 					break;
 				case 3:
-					Letra3.text = "F";
+					Letra3.text = "R";
 					break;
 				case 4:
-					Letra4.text = "S";
+					Letra4.text = "A";
 					break;
 				case 5:
-					Letra5.text = "I";
+					Letra5.text = "C";
 					break;
 				case 6:
-					Letra6.text = "D";
+					Letra6.text = "O";
 					break;
 				case 7:
-					Letra7.text = "E";
+					Letra7.text = "L";
 					break;
 				}
 			}
@@ -2542,25 +2543,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp3){
 				case 1:
-					Letra1.text = "O";
+					Letra1.text = "C";
 					break;
 				case 2:
-					Letra2.text = "F";
+					Letra2.text = "A";
 					break;
 				case 3:
-					Letra3.text = "F";
+					Letra3.text = "R";
 					break;
 				case 4:
-					Letra4.text = "S";
+					Letra4.text = "A";
 					break;
 				case 5:
-					Letra5.text = "I";
+					Letra5.text = "C";
 					break;
 				case 6:
-					Letra6.text = "D";
+					Letra6.text = "O";
 					break;
 				case 7:
-					Letra7.text = "E";
+					Letra7.text = "L";
 					break;
 				}
 			}
@@ -2571,25 +2572,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp4){
 				case 1:
-					Letra1.text = "O";
+					Letra1.text = "C";
 					break;
 				case 2:
-					Letra2.text = "F";
+					Letra2.text = "A";
 					break;
 				case 3:
-					Letra3.text = "F";
+					Letra3.text = "R";
 					break;
 				case 4:
-					Letra4.text = "S";
+					Letra4.text = "A";
 					break;
 				case 5:
-					Letra5.text = "I";
+					Letra5.text = "C";
 					break;
 				case 6:
-					Letra6.text = "D";
+					Letra6.text = "O";
 					break;
 				case 7:
-					Letra7.text = "E";
+					Letra7.text = "L";
 					break;
 				}
 			}
@@ -2600,25 +2601,25 @@ public class Modo1Ayuda : MonoBehaviour {
 				
 				switch(RandomTemp5){
 				case 1:
-					Letra1.text = "O";
+					Letra1.text = "C";
 					break;
 				case 2:
-					Letra2.text = "F";
+					Letra2.text = "A";
 					break;
 				case 3:
-					Letra3.text = "F";
+					Letra3.text = "R";
 					break;
 				case 4:
-					Letra4.text = "S";
+					Letra4.text = "A";
 					break;
 				case 5:
-					Letra5.text = "I";
+					Letra5.text = "C";
 					break;
 				case 6:
-					Letra6.text = "D";
+					Letra6.text = "O";
 					break;
 				case 7:
-					Letra7.text = "E";
+					Letra7.text = "L";
 					break;
 				}
 			}
@@ -5040,6 +5041,8 @@ public class Modo1Ayuda : MonoBehaviour {
 	#region Metodo1
 	/////////// METODO 1
 	void Ayuda () {
+		Monedas = PlayerPrefs.GetInt ("Monedas");
+		if (Monedas >= 3) {
 		if(Metodo==1){
 			//Abogado
 			RandomTemp1 = PlayerPrefs.GetInt("M1-1-1");
@@ -5157,31 +5160,31 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp1){
 			case 1:
-				Letra1.text = "S";
+				Letra1.text = "P";
 				PlayerPrefs.SetInt("M1-4-G1",1);
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "L";
 				PlayerPrefs.SetInt("M1-4-G1",1);
 				break;
 			case 3:
-				Letra3.text = "N";
+				Letra3.text = "A";
 				PlayerPrefs.SetInt("M1-4-G1",1);
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "N";
 				PlayerPrefs.SetInt("M1-4-G1",1);
 				break;
 			case 5:
-				Letra5.text = "U";
+				Letra5.text = "E";
 				PlayerPrefs.SetInt("M1-4-G1",1);
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "T";
 				PlayerPrefs.SetInt("M1-4-G1",1);
 				break;
 			case 7:
-				Letra7.text = "L";
+				Letra7.text = "A";
 				PlayerPrefs.SetInt("M1-4-G1",1);
 				break;
 			}
@@ -5501,7 +5504,7 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp1){
 			case 1:
-				Letra1.text = "C";
+				Letra1.text = "N";
 				PlayerPrefs.SetInt("M1-13-G1",1);
 				break;
 			case 2:
@@ -5509,23 +5512,23 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-13-G1",1);
 				break;
 			case 3:
-				Letra3.text = "E";
+				Letra3.text = "B";
 				PlayerPrefs.SetInt("M1-13-G1",1);
 				break;
 			case 4:
-				Letra4.text = "N";
+				Letra4.text = "L";
 				PlayerPrefs.SetInt("M1-13-G1",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				PlayerPrefs.SetInt("M1-13-G1",1);
 				break;
 			case 6:
-				Letra6.text = "O";
+				Letra6.text = "D";
 				PlayerPrefs.SetInt("M1-13-G1",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "O";
 				PlayerPrefs.SetInt("M1-13-G1",1);
 				break;
 			}
@@ -5577,11 +5580,11 @@ public class Modo1Ayuda : MonoBehaviour {
 
 			switch(RandomTemp1){
 			case 1:
-				Letra1.text = "P";
+					Letra1.text = "S";
 				PlayerPrefs.SetInt("M1-15-G1",1);
 				break;
 			case 2:
-					Letra2.text = "E";
+					Letra2.text = "A";
 				PlayerPrefs.SetInt("M1-15-G1",1);
 				break;
 			case 3:
@@ -5589,19 +5592,19 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-15-G1",1);
 				break;
 			case 4:
-					Letra4.text = "O";
+					Letra4.text = "V";
 				PlayerPrefs.SetInt("M1-15-G1",1);
 				break;
 			case 5:
-					Letra5.text = "T";
+					Letra5.text = "A";
 				PlayerPrefs.SetInt("M1-15-G1",1);
 				break;
 			case 6:
-					Letra6.text = "A";
+					Letra6.text = "J";
 				PlayerPrefs.SetInt("M1-15-G1",1);
 				break;
 			case 7:
-					Letra7.text = "S";
+					Letra7.text = "E";
 				PlayerPrefs.SetInt("M1-15-G1",1);
 				break;
 			}
@@ -5615,23 +5618,23 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp1){
 			case 1:
-				Letra1.text = "B";
+				Letra1.text = "D";
 				PlayerPrefs.SetInt("M1-16-G1",1);
 				break;
 			case 2:
-				Letra2.text = "A";
+				Letra2.text = "I";
 				PlayerPrefs.SetInt("M1-16-G1",1);
 				break;
 			case 3:
-				Letra3.text = "T";
+				Letra3.text = "B";
 				PlayerPrefs.SetInt("M1-16-G1",1);
 				break;
 			case 4:
-				Letra4.text = "A";
+				Letra4.text = "U";
 				PlayerPrefs.SetInt("M1-16-G1",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "J";
 				PlayerPrefs.SetInt("M1-16-G1",1);
 				break;
 			case 6:
@@ -5639,7 +5642,7 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-16-G1",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "R";
 				PlayerPrefs.SetInt("M1-16-G1",1);
 				break;
 			}
@@ -5653,31 +5656,31 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp1){
 			case 1:
-				Letra1.text = "O";
+				Letra1.text = "C";
 				PlayerPrefs.SetInt("M1-17-G1",1);
 				break;
 			case 2:
-				Letra2.text = "F";
+				Letra2.text = "A";
 				PlayerPrefs.SetInt("M1-17-G1",1);
 				break;
 			case 3:
-				Letra3.text = "F";
+				Letra3.text = "R";
 				PlayerPrefs.SetInt("M1-17-G1",1);
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "A";
 				PlayerPrefs.SetInt("M1-17-G1",1);
 				break;
 			case 5:
-				Letra5.text = "I";
+				Letra5.text = "C";
 				PlayerPrefs.SetInt("M1-17-G1",1);
 				break;
 			case 6:
-				Letra6.text = "D";
+				Letra6.text = "O";
 				PlayerPrefs.SetInt("M1-17-G1",1);
 				break;
 			case 7:
-				Letra7.text = "E";
+				Letra7.text = "L";
 				PlayerPrefs.SetInt("M1-17-G1",1);
 				break;
 			}
@@ -6178,13 +6181,18 @@ public class Modo1Ayuda : MonoBehaviour {
 			Detec1.SetActive(false);
 			Detec2.SetActive(true);
 		}
-		Application.LoadLevel ("Nivel1");
+			tempMonedas = Monedas - 3;
+			PlayerPrefs.SetInt ("Monedas", tempMonedas);
+			Application.LoadLevel ("Nivel1");
+		}
 	}
 	#endregion
 
 	#region Metodo2
 	/////////// METODO 2
 	void Ayuda2 () {
+			Monedas = PlayerPrefs.GetInt ("Monedas");
+			if (Monedas >= 5) {
 		if(Metodo==1){
 			//Abogado
 			RandomTemp2 = PlayerPrefs.GetInt("M1-1-2");
@@ -6302,31 +6310,31 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp2){
 			case 1:
-				Letra1.text = "S";
+				Letra1.text = "P";
 				PlayerPrefs.SetInt("M1-4-G2",1);
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "L";
 				PlayerPrefs.SetInt("M1-4-G2",1);
 				break;
 			case 3:
-				Letra3.text = "N";
+				Letra3.text = "A";
 				PlayerPrefs.SetInt("M1-4-G2",1);
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "N";
 				PlayerPrefs.SetInt("M1-4-G2",1);
 				break;
 			case 5:
-				Letra5.text = "U";
+				Letra5.text = "E";
 				PlayerPrefs.SetInt("M1-4-G2",1);
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "T";
 				PlayerPrefs.SetInt("M1-4-G2",1);
 				break;
 			case 7:
-				Letra7.text = "L";
+				Letra7.text = "A";
 				PlayerPrefs.SetInt("M1-4-G2",1);
 				break;
 			}
@@ -6646,7 +6654,7 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp2){
 			case 1:
-				Letra1.text = "C";
+				Letra1.text = "N";
 				PlayerPrefs.SetInt("M1-13-G2",1);
 				break;
 			case 2:
@@ -6654,23 +6662,23 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-13-G2",1);
 				break;
 			case 3:
-				Letra3.text = "E";
+				Letra3.text = "B";
 				PlayerPrefs.SetInt("M1-13-G2",1);
 				break;
 			case 4:
-				Letra4.text = "N";
+				Letra4.text = "L";
 				PlayerPrefs.SetInt("M1-13-G2",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				PlayerPrefs.SetInt("M1-13-G2",1);
 				break;
 			case 6:
-				Letra6.text = "O";
+				Letra6.text = "D";
 				PlayerPrefs.SetInt("M1-13-G2",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "O";
 				PlayerPrefs.SetInt("M1-13-G2",1);
 				break;
 			}
@@ -6722,11 +6730,11 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp2){
 			case 1:
-				Letra1.text = "P";
+				Letra1.text = "S";
 				PlayerPrefs.SetInt("M1-15-G2",1);
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "A";
 				PlayerPrefs.SetInt("M1-15-G2",1);
 				break;
 			case 3:
@@ -6734,19 +6742,19 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-15-G2",1);
 				break;
 			case 4:
-				Letra4.text = "O";
+				Letra4.text = "V";
 				PlayerPrefs.SetInt("M1-15-G2",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				PlayerPrefs.SetInt("M1-15-G2",1);
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "J";
 				PlayerPrefs.SetInt("M1-15-G2",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "E";
 				PlayerPrefs.SetInt("M1-15-G2",1);
 				break;
 			}
@@ -6760,23 +6768,23 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp2){
 			case 1:
-				Letra1.text = "B";
+				Letra1.text = "D";
 				PlayerPrefs.SetInt("M1-16-G2",1);
 				break;
 			case 2:
-				Letra2.text = "A";
+				Letra2.text = "I";
 				PlayerPrefs.SetInt("M1-16-G2",1);
 				break;
 			case 3:
-				Letra3.text = "T";
+				Letra3.text = "B";
 				PlayerPrefs.SetInt("M1-16-G2",1);
 				break;
 			case 4:
-				Letra4.text = "A";
+				Letra4.text = "U";
 				PlayerPrefs.SetInt("M1-16-G2",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "J";
 				PlayerPrefs.SetInt("M1-16-G2",1);
 				break;
 			case 6:
@@ -6784,7 +6792,7 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-16-G2",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "R";
 				PlayerPrefs.SetInt("M1-16-G2",1);
 				break;
 			}
@@ -6798,31 +6806,31 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp2){
 			case 1:
-				Letra1.text = "O";
+				Letra1.text = "C";
 				PlayerPrefs.SetInt("M1-17-G2",1);
 				break;
 			case 2:
-				Letra2.text = "F";
+				Letra2.text = "A";
 				PlayerPrefs.SetInt("M1-17-G2",1);
 				break;
 			case 3:
-				Letra3.text = "F";
+				Letra3.text = "R";
 				PlayerPrefs.SetInt("M1-17-G2",1);
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "A";
 				PlayerPrefs.SetInt("M1-17-G2",1);
 				break;
 			case 5:
-				Letra5.text = "I";
+				Letra5.text = "C";
 				PlayerPrefs.SetInt("M1-17-G2",1);
 				break;
 			case 6:
-				Letra6.text = "D";
+				Letra6.text = "O";
 				PlayerPrefs.SetInt("M1-17-G2",1);
 				break;
 			case 7:
-				Letra7.text = "E";
+				Letra7.text = "L";
 				PlayerPrefs.SetInt("M1-17-G2",1);
 				break;
 			}
@@ -7323,13 +7331,18 @@ public class Modo1Ayuda : MonoBehaviour {
 			Detec2.SetActive(false);
 			Detec3.SetActive(true);
 		}
-		Application.LoadLevel ("Nivel1");
+			tempMonedas = Monedas - 5;
+			PlayerPrefs.SetInt ("Monedas", tempMonedas);
+			Application.LoadLevel ("Nivel1");
+		}
 	}
 	#endregion Metodo2
 
 	#region Metodo3
 	/////////// METODO 3
 	void Ayuda3 () {
+				Monedas = PlayerPrefs.GetInt ("Monedas");
+				if (Monedas >= 8) {
 		if(Metodo==1){
 			//Abogado
 			RandomTemp3 = PlayerPrefs.GetInt("M1-1-3");
@@ -7447,31 +7460,31 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp3){
 			case 1:
-				Letra1.text = "S";
+				Letra1.text = "P";
 				PlayerPrefs.SetInt("M1-4-G3",1);
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "L";
 				PlayerPrefs.SetInt("M1-4-G3",1);
 				break;
 			case 3:
-				Letra3.text = "N";
+				Letra3.text = "A";
 				PlayerPrefs.SetInt("M1-4-G3",1);
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "N";
 				PlayerPrefs.SetInt("M1-4-G3",1);
 				break;
 			case 5:
-				Letra5.text = "U";
+				Letra5.text = "E";
 				PlayerPrefs.SetInt("M1-4-G3",1);
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "T";
 				PlayerPrefs.SetInt("M1-4-G3",1);
 				break;
 			case 7:
-				Letra7.text = "L";
+				Letra7.text = "A";
 				PlayerPrefs.SetInt("M1-4-G3",1);
 				break;
 			}
@@ -7791,7 +7804,7 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp3){
 			case 1:
-				Letra1.text = "C";
+				Letra1.text = "N";
 				PlayerPrefs.SetInt("M1-13-G3",1);
 				break;
 			case 2:
@@ -7799,23 +7812,23 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-13-G3",1);
 				break;
 			case 3:
-				Letra3.text = "E";
+				Letra3.text = "B";
 				PlayerPrefs.SetInt("M1-13-G3",1);
 				break;
 			case 4:
-				Letra4.text = "N";
+				Letra4.text = "L";
 				PlayerPrefs.SetInt("M1-13-G3",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				PlayerPrefs.SetInt("M1-13-G3",1);
 				break;
 			case 6:
-				Letra6.text = "O";
+				Letra6.text = "D";
 				PlayerPrefs.SetInt("M1-13-G3",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "O";
 				PlayerPrefs.SetInt("M1-13-G3",1);
 				break;
 			}
@@ -7867,11 +7880,11 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp3){
 			case 1:
-				Letra1.text = "P";
+				Letra1.text = "S";
 				PlayerPrefs.SetInt("M1-15-G3",1);
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "A";
 				PlayerPrefs.SetInt("M1-15-G3",1);
 				break;
 			case 3:
@@ -7879,19 +7892,19 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-15-G3",1);
 				break;
 			case 4:
-				Letra4.text = "O";
+				Letra4.text = "V";
 				PlayerPrefs.SetInt("M1-15-G3",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				PlayerPrefs.SetInt("M1-15-G3",1);
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "J";
 				PlayerPrefs.SetInt("M1-15-G3",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "E";
 				PlayerPrefs.SetInt("M1-15-G3",1);
 				break;
 			}
@@ -7905,23 +7918,23 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp3){
 			case 1:
-				Letra1.text = "B";
+				Letra1.text = "D";
 				PlayerPrefs.SetInt("M1-16-G3",1);
 				break;
 			case 2:
-				Letra2.text = "A";
+				Letra2.text = "I";
 				PlayerPrefs.SetInt("M1-16-G3",1);
 				break;
 			case 3:
-				Letra3.text = "T";
+				Letra3.text = "B";
 				PlayerPrefs.SetInt("M1-16-G3",1);
 				break;
 			case 4:
-				Letra4.text = "A";
+				Letra4.text = "U";
 				PlayerPrefs.SetInt("M1-16-G3",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "J";
 				PlayerPrefs.SetInt("M1-16-G3",1);
 				break;
 			case 6:
@@ -7929,7 +7942,7 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-16-G3",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "R";
 				PlayerPrefs.SetInt("M1-16-G3",1);
 				break;
 			}
@@ -7943,31 +7956,31 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp3){
 			case 1:
-				Letra1.text = "O";
+				Letra1.text = "C";
 				PlayerPrefs.SetInt("M1-17-G3",1);
 				break;
 			case 2:
-				Letra2.text = "F";
+				Letra2.text = "A";
 				PlayerPrefs.SetInt("M1-17-G3",1);
 				break;
 			case 3:
-				Letra3.text = "F";
+				Letra3.text = "R";
 				PlayerPrefs.SetInt("M1-17-G3",1);
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "A";
 				PlayerPrefs.SetInt("M1-17-G3",1);
 				break;
 			case 5:
-				Letra5.text = "I";
+				Letra5.text = "C";
 				PlayerPrefs.SetInt("M1-17-G3",1);
 				break;
 			case 6:
-				Letra6.text = "D";
+				Letra6.text = "O";
 				PlayerPrefs.SetInt("M1-17-G3",1);
 				break;
 			case 7:
-				Letra7.text = "E";
+				Letra7.text = "L";
 				PlayerPrefs.SetInt("M1-17-G3",1);
 				break;
 			}
@@ -8468,13 +8481,18 @@ public class Modo1Ayuda : MonoBehaviour {
 			Detec3.SetActive(false);
 			Detec4.SetActive(true);
 		}
-		Application.LoadLevel ("Nivel1");
+			tempMonedas = Monedas - 8;
+			PlayerPrefs.SetInt ("Monedas", tempMonedas);
+			Application.LoadLevel ("Nivel1");
+		}
 	}
 	#endregion
 
 	#region Metodo4
 	/////////// METODO 4
 	void Ayuda4 () {
+					Monedas = PlayerPrefs.GetInt ("Monedas");
+					if (Monedas >= 12) {
 		if(Metodo==1){
 			//Abogado
 			RandomTemp4 = PlayerPrefs.GetInt("M1-1-4");
@@ -8592,31 +8610,31 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp4){
 			case 1:
-				Letra1.text = "S";
+				Letra1.text = "P";
 				PlayerPrefs.SetInt("M1-4-G4",1);
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "L";
 				PlayerPrefs.SetInt("M1-4-G4",1);
 				break;
 			case 3:
-				Letra3.text = "N";
+				Letra3.text = "A";
 				PlayerPrefs.SetInt("M1-4-G4",1);
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "N";
 				PlayerPrefs.SetInt("M1-4-G4",1);
 				break;
 			case 5:
-				Letra5.text = "U";
+				Letra5.text = "E";
 				PlayerPrefs.SetInt("M1-4-G4",1);
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "T";
 				PlayerPrefs.SetInt("M1-4-G4",1);
 				break;
 			case 7:
-				Letra7.text = "L";
+				Letra7.text = "A";
 				PlayerPrefs.SetInt("M1-4-G4",1);
 				break;
 			}
@@ -8936,7 +8954,7 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp4){
 			case 1:
-				Letra1.text = "C";
+				Letra1.text = "N";
 				PlayerPrefs.SetInt("M1-13-G4",1);
 				break;
 			case 2:
@@ -8944,23 +8962,23 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-13-G4",1);
 				break;
 			case 3:
-				Letra3.text = "E";
+				Letra3.text = "B";
 				PlayerPrefs.SetInt("M1-13-G4",1);
 				break;
 			case 4:
-				Letra4.text = "N";
+				Letra4.text = "L";
 				PlayerPrefs.SetInt("M1-13-G4",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				PlayerPrefs.SetInt("M1-13-G4",1);
 				break;
 			case 6:
-				Letra6.text = "O";
+				Letra6.text = "D";
 				PlayerPrefs.SetInt("M1-13-G4",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "O";
 				PlayerPrefs.SetInt("M1-13-G4",1);
 				break;
 			}
@@ -9012,11 +9030,11 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp4){
 			case 1:
-				Letra1.text = "P";
+				Letra1.text = "S";
 				PlayerPrefs.SetInt("M1-15-G4",1);
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "A";
 				PlayerPrefs.SetInt("M1-15-G4",1);
 				break;
 			case 3:
@@ -9024,19 +9042,19 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-15-G4",1);
 				break;
 			case 4:
-				Letra4.text = "O";
+				Letra4.text = "V";
 				PlayerPrefs.SetInt("M1-15-G4",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				PlayerPrefs.SetInt("M1-15-G4",1);
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "J";
 				PlayerPrefs.SetInt("M1-15-G4",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "E";
 				PlayerPrefs.SetInt("M1-15-G4",1);
 				break;
 			}
@@ -9050,23 +9068,23 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp4){
 			case 1:
-				Letra1.text = "B";
+				Letra1.text = "D";
 				PlayerPrefs.SetInt("M1-16-G4",1);
 				break;
 			case 2:
-				Letra2.text = "A";
+				Letra2.text = "I";
 				PlayerPrefs.SetInt("M1-16-G4",1);
 				break;
 			case 3:
-				Letra3.text = "T";
+				Letra3.text = "B";
 				PlayerPrefs.SetInt("M1-16-G4",1);
 				break;
 			case 4:
-				Letra4.text = "A";
+				Letra4.text = "U";
 				PlayerPrefs.SetInt("M1-16-G4",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "J";
 				PlayerPrefs.SetInt("M1-16-G4",1);
 				break;
 			case 6:
@@ -9074,7 +9092,7 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-16-G4",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "R";
 				PlayerPrefs.SetInt("M1-16-G4",1);
 				break;
 			}
@@ -9088,31 +9106,31 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp4){
 			case 1:
-				Letra1.text = "O";
+				Letra1.text = "C";
 				PlayerPrefs.SetInt("M1-17-G4",1);
 				break;
 			case 2:
-				Letra2.text = "F";
+				Letra2.text = "A";
 				PlayerPrefs.SetInt("M1-17-G4",1);
 				break;
 			case 3:
-				Letra3.text = "F";
+				Letra3.text = "R";
 				PlayerPrefs.SetInt("M1-17-G4",1);
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "A";
 				PlayerPrefs.SetInt("M1-17-G4",1);
 				break;
 			case 5:
-				Letra5.text = "I";
+				Letra5.text = "C";
 				PlayerPrefs.SetInt("M1-17-G4",1);
 				break;
 			case 6:
-				Letra6.text = "D";
+				Letra6.text = "O";
 				PlayerPrefs.SetInt("M1-17-G4",1);
 				break;
 			case 7:
-				Letra7.text = "E";
+				Letra7.text = "L";
 				PlayerPrefs.SetInt("M1-17-G4",1);
 				break;
 			}
@@ -9613,13 +9631,18 @@ public class Modo1Ayuda : MonoBehaviour {
 			Detec4.SetActive(false);
 			Detec5.SetActive(true);
 		}
-		Application.LoadLevel ("Nivel1");
+			tempMonedas = Monedas - 12;
+			PlayerPrefs.SetInt ("Monedas", tempMonedas);
+			Application.LoadLevel ("Nivel1");
+		}
 	}
 	#endregion
 
 	#region Metodo5
 	/////////// METODO 5
 	void Ayuda5 () {
+						Monedas = PlayerPrefs.GetInt ("Monedas");
+						if (Monedas >= 15) {
 		if(Metodo==1){
 			//Abogado
 			RandomTemp5 = PlayerPrefs.GetInt("M1-1-5");
@@ -9737,31 +9760,31 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp5){
 			case 1:
-				Letra1.text = "S";
+				Letra1.text = "P";
 				PlayerPrefs.SetInt("M1-4-G5",1);
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "L";
 				PlayerPrefs.SetInt("M1-4-G5",1);
 				break;
 			case 3:
-				Letra3.text = "N";
+				Letra3.text = "A";
 				PlayerPrefs.SetInt("M1-4-G5",1);
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "N";
 				PlayerPrefs.SetInt("M1-4-G5",1);
 				break;
 			case 5:
-				Letra5.text = "U";
+				Letra5.text = "E";
 				PlayerPrefs.SetInt("M1-4-G5",1);
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "T";
 				PlayerPrefs.SetInt("M1-4-G5",1);
 				break;
 			case 7:
-				Letra7.text = "L";
+				Letra7.text = "A";
 				PlayerPrefs.SetInt("M1-4-G5",1);
 				break;
 			}
@@ -10081,7 +10104,7 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp5){
 			case 1:
-				Letra1.text = "C";
+				Letra1.text = "N";
 				PlayerPrefs.SetInt("M1-13-G5",1);
 				break;
 			case 2:
@@ -10089,23 +10112,23 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-13-G5",1);
 				break;
 			case 3:
-				Letra3.text = "E";
+				Letra3.text = "B";
 				PlayerPrefs.SetInt("M1-13-G5",1);
 				break;
 			case 4:
-				Letra4.text = "N";
+				Letra4.text = "L";
 				PlayerPrefs.SetInt("M1-13-G5",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				PlayerPrefs.SetInt("M1-13-G5",1);
 				break;
 			case 6:
-				Letra6.text = "O";
+				Letra6.text = "D";
 				PlayerPrefs.SetInt("M1-13-G5",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "O";
 				PlayerPrefs.SetInt("M1-13-G5",1);
 				break;
 			}
@@ -10157,11 +10180,11 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp5){
 			case 1:
-				Letra1.text = "P";
+				Letra1.text = "S";
 				PlayerPrefs.SetInt("M1-15-G5",1);
 				break;
 			case 2:
-				Letra2.text = "E";
+				Letra2.text = "A";
 				PlayerPrefs.SetInt("M1-15-G5",1);
 				break;
 			case 3:
@@ -10169,19 +10192,19 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-15-G5",1);
 				break;
 			case 4:
-				Letra4.text = "O";
+				Letra4.text = "V";
 				PlayerPrefs.SetInt("M1-15-G5",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "A";
 				PlayerPrefs.SetInt("M1-15-G5",1);
 				break;
 			case 6:
-				Letra6.text = "A";
+				Letra6.text = "J";
 				PlayerPrefs.SetInt("M1-15-G5",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "E";
 				PlayerPrefs.SetInt("M1-15-G5",1);
 				break;
 			}
@@ -10195,23 +10218,23 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp5){
 			case 1:
-				Letra1.text = "B";
+				Letra1.text = "D";
 				PlayerPrefs.SetInt("M1-16-G5",1);
 				break;
 			case 2:
-				Letra2.text = "A";
+				Letra2.text = "I";
 				PlayerPrefs.SetInt("M1-16-G5",1);
 				break;
 			case 3:
-				Letra3.text = "T";
+				Letra3.text = "B";
 				PlayerPrefs.SetInt("M1-16-G5",1);
 				break;
 			case 4:
-				Letra4.text = "A";
+				Letra4.text = "U";
 				PlayerPrefs.SetInt("M1-16-G5",1);
 				break;
 			case 5:
-				Letra5.text = "T";
+				Letra5.text = "J";
 				PlayerPrefs.SetInt("M1-16-G5",1);
 				break;
 			case 6:
@@ -10219,7 +10242,7 @@ public class Modo1Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M1-16-G5",1);
 				break;
 			case 7:
-				Letra7.text = "S";
+				Letra7.text = "R";
 				PlayerPrefs.SetInt("M1-16-G5",1);
 				break;
 			}
@@ -10233,31 +10256,31 @@ public class Modo1Ayuda : MonoBehaviour {
 			
 			switch(RandomTemp5){
 			case 1:
-				Letra1.text = "O";
+				Letra1.text = "C";
 				PlayerPrefs.SetInt("M1-17-G5",1);
 				break;
 			case 2:
-				Letra2.text = "F";
+				Letra2.text = "A";
 				PlayerPrefs.SetInt("M1-17-G5",1);
 				break;
 			case 3:
-				Letra3.text = "F";
+				Letra3.text = "R";
 				PlayerPrefs.SetInt("M1-17-G5",1);
 				break;
 			case 4:
-				Letra4.text = "S";
+				Letra4.text = "A";
 				PlayerPrefs.SetInt("M1-17-G5",1);
 				break;
 			case 5:
-				Letra5.text = "I";
+				Letra5.text = "C";
 				PlayerPrefs.SetInt("M1-17-G5",1);
 				break;
 			case 6:
-				Letra6.text = "D";
+				Letra6.text = "O";
 				PlayerPrefs.SetInt("M1-17-G5",1);
 				break;
 			case 7:
-				Letra7.text = "E";
+				Letra7.text = "L";
 				PlayerPrefs.SetInt("M1-17-G5",1);
 				break;
 			}
@@ -10758,7 +10781,10 @@ public class Modo1Ayuda : MonoBehaviour {
 			Detec5.SetActive(false);
 			Detec6.SetActive(true);
 		}
-		Application.LoadLevel ("Nivel1");
+			tempMonedas = Monedas - 15;
+			PlayerPrefs.SetInt ("Monedas", tempMonedas);
+			Application.LoadLevel ("Nivel1");
+		}
 	}
 	#endregion
 

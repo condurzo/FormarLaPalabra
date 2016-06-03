@@ -1,0 +1,36 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Others/CountdownTimer_CSHARP.cs">
+    <Files>
+      <File FileName="Assets/FBManager/Scripts/FBManager.cs" Line="55" Column="9" />
+      <File FileName="Assets/Script/SelectorMundos/ManagerSelectorMundos.cs" Line="156" Column="6" />
+      <File FileName="Assets/Script/SelectorMundos/ManagerAjustes.cs" Line="60" Column="33" />
+      <File FileName="Assets/Script/Mundo 2/Nivel 8 L/Modo2Puntos.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Mundo 3/Modo3Puntos.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Mundo 4/Modo4Puntos.cs" Line="643" Column="8" />
+      <File FileName="Assets/Script/Mundo 1/Nivel 7 L/Modo1.cs" Line="249" Column="56" />
+      <File FileName="Assets/Script/Mundo 2/Nivel 8 L/Modo2.cs" Line="99" Column="3" />
+      <File FileName="Assets/Script/Mundo 3/Modo3.cs" Line="80" Column="3" />
+      <File FileName="Assets/Script/Mundo 4/Modo4.cs" Line="79" Column="42" />
+      <File FileName="Assets/Script/SelectorMundos/BackButton.cs" Line="19" Column="18" />
+      <File FileName="Assets/Script/Mundo 4/Modo4Ayuda.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Mundo 1/Nivel 7 L/Modo1Monedas.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Splash/Splash.cs" Line="1" Column="1" />
+      <File FileName="Assets/unity-ui-extensions/Scripts/Layout/ScrollSnap.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/AdMobs/Examples.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Splash/AnimacionBolita.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Others/BasicLeaderborad.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="Assets/FBManager/Scripts/ListItemLeaderboard.cs" Line="1" Column="1" />
+      <File FileName="Assets/FacebookSDK/Examples/Scripts/SubMenus/GraphRequest.cs" Line="1" Column="1" />
+      <File FileName="Assets/FacebookSDK/Examples/Scripts/SubMenus/DialogShare.cs" Line="1" Column="1" />
+      <File FileName="Assets/FacebookSDK/SDK/Scripts/FB.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Others/CountdownTimer_CSHARP.cs" Line="90" Column="1" />
+      <File FileName="Assets/Script/Others/PuntosManager.cs" Line="19" Column="52" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
