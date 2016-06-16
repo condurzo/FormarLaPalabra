@@ -113,7 +113,7 @@ public class Modo2 : MonoBehaviour {
 	}
 
 	void Start () {
-
+		System.GC.Collect();
 		Level = PlayerPrefs.GetInt("level2");
 		switch (Level){
 		case 1 :

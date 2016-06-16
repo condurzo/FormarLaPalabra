@@ -18,6 +18,7 @@ public class ManagerTutorial : MonoBehaviour {
 
 
 	void Start(){
+		System.GC.Collect();
 		ads.HideBanner();
 	}
 

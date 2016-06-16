@@ -75,7 +75,7 @@ public class Tutorial6Letras : MonoBehaviour {
 
 
 	void Start () {
-
+		System.GC.Collect();
 		Level = PlayerPrefs.GetInt("levelTutorial");
 		switch (Level){
 		case 11 :

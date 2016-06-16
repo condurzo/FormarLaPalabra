@@ -241,6 +241,7 @@
      <Compile Include="Assets\Script\Others\BasicLeaderborad.cs" />
      <Compile Include="Assets\Script\Others\CountdownTimer_CSHARP.cs" />
      <Compile Include="Assets\Script\Others\FindVidas.cs" />
+     <Compile Include="Assets\Script\Others\GarbageCol.cs" />
      <Compile Include="Assets\Script\Others\ManagerTutorial.cs" />
      <Compile Include="Assets\Script\Others\MusicaFondo.cs" />
      <Compile Include="Assets\Script\Others\PuntosManager.cs" />
