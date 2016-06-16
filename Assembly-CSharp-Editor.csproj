@@ -168,6 +168,8 @@
      <None Include="Assets\TK2DROOT\tk2d\Shaders\Blend2TexVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2dUI\Shaders\DepthMaskSolid.shader" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito24.fnt" />
+     <None Include="Assets\Plugins\readme.txt" />
+     <None Include="Assets\Plugins\UnbiasedTime\UnbiasedTime_UnityPro.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\resources\BlendVertexColor.shader" />
      <None Include="Assets\unity-ui-extensions\Shaders\UIImageCrop.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
@@ -247,6 +249,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{EBA67E34-C505-C7D6-B92F-485552BA29D4}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{FA838F82-0983-B455-4484-1C0C14BB2A41}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>

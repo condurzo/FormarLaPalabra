@@ -25,6 +25,8 @@ public class ManagerSelectorMundos : MonoBehaviour {
 	public bool tiempo;
 	public bool mostrando;
 
+	public int VidasTemp;
+
 	void Start () {
 		ads.ShowBanner ();
 
@@ -83,6 +85,7 @@ public class ManagerSelectorMundos : MonoBehaviour {
 	}
 
 	void Update(){
+		VidasTemp = PlayerPrefs.GetInt ("Vidas");
 
 		if (!tiempo) {
 			Invoke ("Achico", 0.4f);
@@ -148,46 +151,54 @@ public class ManagerSelectorMundos : MonoBehaviour {
 
 
 	public void GoToMundo1(){
-		if (PlayerPrefs.GetInt ("Stop-Nivel1-Ver1") == 0) {
-			if (PlayerPrefs.GetInt ("Desblo-Nivel1-Ver1") == 1) {
-				if (PlayerPrefs.GetInt ("UnicaVez1") == 0) {
-					PlayerPrefs.SetInt ("level", 1);
-					PlayerPrefs.SetInt ("UnicaVez1", 1);
+		if (VidasTemp >= 1) {
+			if (PlayerPrefs.GetInt ("Stop-Nivel1-Ver1") == 0) {
+				if (PlayerPrefs.GetInt ("Desblo-Nivel1-Ver1") == 1) {
+					if (PlayerPrefs.GetInt ("UnicaVez1") == 0) {
+						PlayerPrefs.SetInt ("level", 1);
+						PlayerPrefs.SetInt ("UnicaVez1", 1);
+					}
+					SceneManager.LoadScene ("Nivel1");
 				}
-				SceneManager.LoadScene ("Nivel1");
 			}
 		}
 	}
 	public void GoToMundo2(){
-		if (PlayerPrefs.GetInt ("Stop-Nivel2-Ver1") == 0) {
-			if (PlayerPrefs.GetInt ("Desblo-Nivel2-Ver1") == 1) {
-				if (PlayerPrefs.GetInt ("UnicaVez2") == 0) {
-					PlayerPrefs.SetInt ("level2", 1);
-					PlayerPrefs.SetInt ("UnicaVez2", 1);
+		if (VidasTemp >= 1) {
+			if (PlayerPrefs.GetInt ("Stop-Nivel2-Ver1") == 0) {
+				if (PlayerPrefs.GetInt ("Desblo-Nivel2-Ver1") == 1) {
+					if (PlayerPrefs.GetInt ("UnicaVez2") == 0) {
+						PlayerPrefs.SetInt ("level2", 1);
+						PlayerPrefs.SetInt ("UnicaVez2", 1);
+					}
+					SceneManager.LoadScene ("Nivel2");
 				}
-				SceneManager.LoadScene ("Nivel2");
 			}
 		}
 	}
 	public void GoToMundo3(){
-		if (PlayerPrefs.GetInt ("Stop-Nivel3-Ver1") == 0) {
-			if (PlayerPrefs.GetInt ("Desblo-Nivel3-Ver1") == 1) {
-				if (PlayerPrefs.GetInt ("UnicaVez3") == 0) {
-					PlayerPrefs.SetInt ("level3", 1);
-					PlayerPrefs.SetInt ("UnicaVez3", 1);
+		if (VidasTemp >= 1) {
+			if (PlayerPrefs.GetInt ("Stop-Nivel3-Ver1") == 0) {
+				if (PlayerPrefs.GetInt ("Desblo-Nivel3-Ver1") == 1) {
+					if (PlayerPrefs.GetInt ("UnicaVez3") == 0) {
+						PlayerPrefs.SetInt ("level3", 1);
+						PlayerPrefs.SetInt ("UnicaVez3", 1);
+					}
+					SceneManager.LoadScene ("Nivel3");
 				}
-				SceneManager.LoadScene ("Nivel3");
 			}
 		}
 	}
 	public void GoToMundo4(){
-		if (PlayerPrefs.GetInt ("Stop-Nivel4-Ver1") == 0) {
-			if (PlayerPrefs.GetInt ("Desblo-Nivel4-Ver1") == 1) {
-				if (PlayerPrefs.GetInt ("UnicaVez4") == 0) {
-					PlayerPrefs.SetInt ("level4", 1);
-					PlayerPrefs.SetInt ("UnicaVez4", 1);
+		if (VidasTemp >= 1) {
+			if (PlayerPrefs.GetInt ("Stop-Nivel4-Ver1") == 0) {
+				if (PlayerPrefs.GetInt ("Desblo-Nivel4-Ver1") == 1) {
+					if (PlayerPrefs.GetInt ("UnicaVez4") == 0) {
+						PlayerPrefs.SetInt ("level4", 1);
+						PlayerPrefs.SetInt ("UnicaVez4", 1);
+					}
+					SceneManager.LoadScene ("Nivel4");
 				}
-				SceneManager.LoadScene ("Nivel4");
 			}
 		}
 	}

@@ -53,6 +53,8 @@ public class Modo2 : MonoBehaviour {
 
 	public string Palabra;
 
+	public int Vidas;
+
 	public int mostrador;
 
 	void Avanzar(){
@@ -95,13 +97,19 @@ public class Modo2 : MonoBehaviour {
 	void AtrasLose(){
 		Modo1Puntos.Victoria = false;
 		CountdownTimer_CSHARP.TerminoPartida = false;
+
 		Application.LoadLevel ("SelectorMundos");
 	}
 
 	void ReloadLevel(){
 		Modo1Puntos.Victoria = false;
 		CountdownTimer_CSHARP.TerminoPartida = false;
-		Application.LoadLevel("Nivel2");
+		if (Vidas > 0) {
+			Application.LoadLevel("Nivel2");
+		} else {
+			Application.LoadLevel ("SelectorMundos");
+		}
+
 	}
 
 	void Start () {
@@ -454,5 +462,7 @@ public class Modo2 : MonoBehaviour {
 
 	}
 
-
+	void Update(){
+		Vidas = PlayerPrefs.GetInt ("Vidas");
+	}
 }

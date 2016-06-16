@@ -82,8 +82,12 @@ public class Modo2Ayuda : MonoBehaviour {
 		TextoAyuda6.SetActive (false);
 	}
 
-	void Start(){
+	void Awake(){
 		AyudaBool1 = true;
+	}
+
+	void Start(){
+		
 
 
 		#region GuardarLetras
@@ -5034,6 +5038,7 @@ public class Modo2Ayuda : MonoBehaviour {
 	}
 
 	void Update(){
+		Awake ();
 
 		#region RandomNumber
 
@@ -6756,7 +6761,8 @@ public class Modo2Ayuda : MonoBehaviour {
 		}
 			tempMonedas = Monedas - 3;
 			PlayerPrefs.SetInt ("Monedas", tempMonedas);
-			Application.LoadLevel ("Nivel2");
+			TextoAyuda1.SetActive (false);
+			//Application.LoadLevel ("Nivel2");
 		}
 
 
@@ -7874,7 +7880,7 @@ public class Modo2Ayuda : MonoBehaviour {
 				PlayerPrefs.SetInt("M2-27-G2",1);
 				break;
 			case 3:
-				Letra3.text = "T";Application.LoadLevel ("Nivel2");
+					Letra3.text = "T";
 				PlayerPrefs.SetInt("M2-27-G2",1);
 				break;
 			case 4:
@@ -8029,7 +8035,8 @@ public class Modo2Ayuda : MonoBehaviour {
 		}
 			tempMonedas = Monedas - 5;
 			PlayerPrefs.SetInt ("Monedas", tempMonedas);
-			Application.LoadLevel ("Nivel2");
+			TextoAyuda2.SetActive (false);
+			//Application.LoadLevel ("Nivel2");
 		}
 	}
 
@@ -9303,7 +9310,8 @@ public class Modo2Ayuda : MonoBehaviour {
 		}
 			tempMonedas = Monedas - 8;
 			PlayerPrefs.SetInt ("Monedas", tempMonedas);
-			Application.LoadLevel ("Nivel2");
+			TextoAyuda3.SetActive (false);
+			//Application.LoadLevel ("Nivel2");
 		}
 	}
 
@@ -10575,7 +10583,8 @@ public class Modo2Ayuda : MonoBehaviour {
 		}
 			tempMonedas = Monedas - 12;
 			PlayerPrefs.SetInt ("Monedas", tempMonedas);
-			Application.LoadLevel ("Nivel2");
+			TextoAyuda4.SetActive (false);
+			//Application.LoadLevel ("Nivel2");
 		}
 	}
 	#endregion
@@ -11874,7 +11883,8 @@ public class Modo2Ayuda : MonoBehaviour {
 		}
 			tempMonedas = Monedas - 15;
 			PlayerPrefs.SetInt ("Monedas", tempMonedas);
-			Application.LoadLevel ("Nivel2");
+			TextoAyuda5.SetActive (false);
+			//Application.LoadLevel ("Nivel2");
 		}
 	}
 	#endregion

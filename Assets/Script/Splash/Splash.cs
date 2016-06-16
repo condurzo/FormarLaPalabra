@@ -16,8 +16,9 @@ public class Splash : MonoBehaviour {
 	void Start(){
 
 		if(PlayerPrefs.GetInt("UnaVezMonedas")==0){
+			PlayerPrefs.SetInt ("levelTutorial", 1);
 			PlayerPrefs.SetInt ("Desblo-Nivel1-Ver1", 1);
-			PlayerPrefs.SetInt("Monedas",20);
+//			PlayerPrefs.SetInt("Monedas",20);
 			PlayerPrefs.SetInt ("Vidas", 5);
 			PlayerPrefs.SetInt("UnaVezMonedas",1);
 		}
@@ -54,7 +55,17 @@ public class Splash : MonoBehaviour {
 
 			if (PlayerPrefs.GetInt ("Tutorial") == 0) {
 				Application.LoadLevel ("Tutorial");
-			} else {
+			} 
+			if (PlayerPrefs.GetInt ("TutoJugable1") == 1) {
+				Application.LoadLevel ("Tutotial-4Letras");
+			}
+			if (PlayerPrefs.GetInt ("TutoJugable2") == 1) {
+				Application.LoadLevel ("Tutotial-5Letras");
+			}
+			if (PlayerPrefs.GetInt ("TutoJugable3") == 1) {
+				Application.LoadLevel ("Tutotial-6Letras");
+			}
+			if (PlayerPrefs.GetInt ("TerminoTutoJugable") == 1) {
 				Application.LoadLevel ("SelectorMundos");
 			}
 		}

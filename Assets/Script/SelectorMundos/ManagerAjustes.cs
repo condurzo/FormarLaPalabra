@@ -60,11 +60,24 @@ public class ManagerAjustes : MonoBehaviour {
 		//Perdio Primera vez el nivel.
 		PlayerPrefs.SetInt ("PerdioPrimera",0);
 
-		//Monedas al Basico
-		PlayerPrefs.SetInt("Monedas",30);
+		//Monedas a 0 ( con el tutorial junta 30)
+		PlayerPrefs.SetInt("Monedas",0);
 
+		//Reseteo Tutorial
+		PlayerPrefs.SetInt ("Tutorial", 0);
+		PlayerPrefs.SetInt ("TutoJugable1", 0);
+		PlayerPrefs.SetInt ("TutoJugable2", 0);
+		PlayerPrefs.SetInt ("TutoJugable3", 0);
+		PlayerPrefs.SetInt ("TerminoTutoJugable", 0);
+		PlayerPrefs.SetInt ("levelTutorial", 1);
+			
 		//Vidas al Basico
 		PlayerPrefs.SetInt ("Vidas", 5);
+		PlayerPrefs.SetInt ("LoseVida4", 0);
+		PlayerPrefs.SetInt ("LoseVida3", 0);
+		PlayerPrefs.SetInt ("LoseVida2", 0);
+		PlayerPrefs.SetInt ("LoseVida1", 0);
+		PlayerPrefs.SetInt ("LoseVida0", 0);
 
 		//Puntos
 		PlayerPrefs.SetInt ("PuntosTotal",0);

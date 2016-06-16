@@ -20,7 +20,11 @@ public class CountdownTimer_CSHARP : MonoBehaviour {
 	public bool ActivoTiempo;
 	public GameObject Reloj;
 
+	public bool Perdio;
+	public int Vidas;
+
 	public AudioClip RelojAudio;
+
 
 	void Start(){
 		GetComponent<AudioSource>().clip = RelojAudio;
@@ -31,6 +35,10 @@ public class CountdownTimer_CSHARP : MonoBehaviour {
 	}
 
 	void Update(){
+		
+
+
+
 		if (!TerminoPartida) {
 			SegundosPuntos = Seconds;
 			MinutosPuntos = Minutes;
@@ -55,6 +63,8 @@ public class CountdownTimer_CSHARP : MonoBehaviour {
 			}
 
 			if ((Seconds == 0)&&(Minutes == 0)) {
+				Vidas = PlayerPrefs.GetInt ("Vidas");
+				Perdio = true;
 				TerminoPartida = true;
 				PlayerPrefs.SetInt ("PerdioPrimera",1);
 				GUI1.SetActive (false);
@@ -63,6 +73,7 @@ public class CountdownTimer_CSHARP : MonoBehaviour {
 				GUI4.SetActive (false);
 				GUI5.SetActive (false);
 				GetComponent<AudioSource>().Stop();
+
 				Perdiste.SetActive (true);
 			}
 
@@ -100,7 +111,35 @@ public class CountdownTimer_CSHARP : MonoBehaviour {
 				}
 			}
 		}
+
+		if (Perdio) {
+			if (Vidas > 0) {
+				Vidas--;
+				PlayerPrefs.SetInt ("Vidas", Vidas);
+				Debug.Log ("VIDAS: " + PlayerPrefs.GetInt ("Vidas"));
+				switch (Vidas) {
+				case 4:
+					PlayerPrefs.SetInt ("LoseVida4", 0);
+					break;
+				case 3:
+					PlayerPrefs.SetInt ("LoseVida3", 0);
+					break;
+				case 2:
+					PlayerPrefs.SetInt ("LoseVida2", 0);
+					break;
+				case 1:
+					PlayerPrefs.SetInt ("LoseVida1", 0);
+					break;
+				case 0:
+					PlayerPrefs.SetInt ("LoseVida0", 0);
+					break;
+				}
+ 			}
+			Perdio = false;
+		}
 	}
+
+
 
 		void Agrando(){
 		Reloj.transform.localScale = new Vector3(0.09934664f, 0.274987f, 0.09459486f);

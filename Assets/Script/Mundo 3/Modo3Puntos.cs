@@ -121,6 +121,7 @@ public class Modo3Puntos : MonoBehaviour {
 
 	public AudioClip PerdisteAudio;
 	public AudioClip GanasteAudio;
+	public AudioClip TocoRombo;
 
 	void Start(){
 
@@ -694,6 +695,10 @@ public class Modo3Puntos : MonoBehaviour {
 					Rombo1.GetComponent<Renderer>().material = Rombo1Alpha;
 					LastMaterial.GetComponent<Renderer>().material = Letra1Mat.GetComponent<Renderer>().material;
 					SumadorLetras ++;
+					GetComponent<AudioSource>().clip = TocoRombo;
+					if (!GetComponent<AudioSource> ().isPlaying) {
+						GetComponent<AudioSource> ().Play ();
+					}
 					id1Bool=true;
 
 				}
@@ -704,6 +709,10 @@ public class Modo3Puntos : MonoBehaviour {
 					Rombo2.GetComponent<Renderer>().material = Rombo2Alpha;
 					LastMaterial.GetComponent<Renderer>().material = Letra2Mat.GetComponent<Renderer>().material;
 					SumadorLetras ++;
+					GetComponent<AudioSource>().clip = TocoRombo;
+					if (!GetComponent<AudioSource> ().isPlaying) {
+						GetComponent<AudioSource> ().Play ();
+					}
 					id2Bool = true;
 				}
 			}
@@ -713,6 +722,10 @@ public class Modo3Puntos : MonoBehaviour {
 					Rombo3.GetComponent<Renderer>().material = Rombo3Alpha;
 					LastMaterial.GetComponent<Renderer>().material = Letra3Mat.GetComponent<Renderer>().material;
 					SumadorLetras ++;
+					GetComponent<AudioSource>().clip = TocoRombo;
+					if (!GetComponent<AudioSource> ().isPlaying) {
+						GetComponent<AudioSource> ().Play ();
+					}
 					id3Bool = true;
 				}
 			}
@@ -722,6 +735,10 @@ public class Modo3Puntos : MonoBehaviour {
 					Rombo4.GetComponent<Renderer>().material = Rombo4Alpha;
 					LastMaterial.GetComponent<Renderer>().material = Letra4Mat.GetComponent<Renderer>().material;
 					SumadorLetras ++;
+					GetComponent<AudioSource>().clip = TocoRombo;
+					if (!GetComponent<AudioSource> ().isPlaying) {
+						GetComponent<AudioSource> ().Play ();
+					}
 					id4Bool = true;
 				}
 			}
@@ -731,6 +748,10 @@ public class Modo3Puntos : MonoBehaviour {
 					Rombo5.GetComponent<Renderer>().material = Rombo5Alpha;
 					LastMaterial.GetComponent<Renderer>().material = Letra5Mat.GetComponent<Renderer>().material;
 					SumadorLetras ++;
+					GetComponent<AudioSource>().clip = TocoRombo;
+					if (!GetComponent<AudioSource> ().isPlaying) {
+						GetComponent<AudioSource> ().Play ();
+					}
 					id5Bool = true;
 				}
 			}
@@ -740,6 +761,10 @@ public class Modo3Puntos : MonoBehaviour {
 					Rombo6.GetComponent<Renderer>().material = Rombo6Alpha;
 					LastMaterial.GetComponent<Renderer>().material = Letra6Mat.GetComponent<Renderer>().material;
 					SumadorLetras ++;
+					GetComponent<AudioSource>().clip = TocoRombo;
+					if (!GetComponent<AudioSource> ().isPlaying) {
+						GetComponent<AudioSource> ().Play ();
+					}
 					id6Bool = true;
 				}
 			}
@@ -749,6 +774,10 @@ public class Modo3Puntos : MonoBehaviour {
 					Rombo7.GetComponent<Renderer>().material = Rombo7Alpha;
 					LastMaterial.GetComponent<Renderer>().material = Letra7Mat.GetComponent<Renderer>().material;
 					SumadorLetras ++;
+					GetComponent<AudioSource>().clip = TocoRombo;
+					if (!GetComponent<AudioSource> ().isPlaying) {
+						GetComponent<AudioSource> ().Play ();
+					}
 					id7Bool = true;
 				}
 			}
@@ -758,6 +787,10 @@ public class Modo3Puntos : MonoBehaviour {
 					Rombo8.GetComponent<Renderer>().material = Rombo8Alpha;
 					LastMaterial.GetComponent<Renderer>().material = Letra8Mat.GetComponent<Renderer>().material;
 					SumadorLetras ++;
+					GetComponent<AudioSource>().clip = TocoRombo;
+					if (!GetComponent<AudioSource> ().isPlaying) {
+						GetComponent<AudioSource> ().Play ();
+					}
 					id8Bool = true;
 				}
 			}
@@ -767,6 +800,10 @@ public class Modo3Puntos : MonoBehaviour {
 					Rombo9.GetComponent<Renderer>().material = Rombo9Alpha;
 					LastMaterial.GetComponent<Renderer>().material = Letra9Mat.GetComponent<Renderer>().material;
 					SumadorLetras ++;
+					GetComponent<AudioSource>().clip = TocoRombo;
+					if (!GetComponent<AudioSource> ().isPlaying) {
+						GetComponent<AudioSource> ().Play ();
+					}
 					id9Bool = true;
 				}
 			}

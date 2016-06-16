@@ -23,7 +23,8 @@ public class ManagerTutorial : MonoBehaviour {
 
 	public void Saltar(){
 		PlayerPrefs.SetInt ("Tutorial",1);
-		Application.LoadLevel ("SelectorMundos");
+		PlayerPrefs.SetInt ("TutoJugable1", 1);
+		Application.LoadLevel ("Tutotial-4Letras");
 	}
 	void Agrando(){
 		FlechaDer.transform.localScale = new Vector3(1f, 1f, 1f);

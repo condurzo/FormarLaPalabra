@@ -219,6 +219,7 @@
      <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
      <Compile Include="Assets\GoogleMobileAds\admobscript.cs" />
      <Compile Include="Assets\Script\AdMobs\Examples.cs" />
+     <Compile Include="Assets\Script\BorrarTest.cs" />
      <Compile Include="Assets\Script\Mundo 1\Nivel 7 L\Modo1.cs" />
      <Compile Include="Assets\Script\Mundo 1\Nivel 7 L\Modo1Ayuda.cs" />
      <Compile Include="Assets\Script\Mundo 1\Nivel 7 L\Modo1Monedas.cs" />
@@ -239,7 +240,9 @@
      <Compile Include="Assets\Script\Mundo 4\Modo4Puntos.cs" />
      <Compile Include="Assets\Script\Others\BasicLeaderborad.cs" />
      <Compile Include="Assets\Script\Others\CountdownTimer_CSHARP.cs" />
+     <Compile Include="Assets\Script\Others\FindVidas.cs" />
      <Compile Include="Assets\Script\Others\ManagerTutorial.cs" />
+     <Compile Include="Assets\Script\Others\MusicaFondo.cs" />
      <Compile Include="Assets\Script\Others\PuntosManager.cs" />
      <Compile Include="Assets\Script\Others\SoundManager.cs" />
      <Compile Include="Assets\Script\Others\uGUITools.cs" />
@@ -248,6 +251,14 @@
      <Compile Include="Assets\Script\SelectorMundos\ManagerSelectorMundos.cs" />
      <Compile Include="Assets\Script\Splash\AnimacionBolita.cs" />
      <Compile Include="Assets\Script\Splash\Splash.cs" />
+     <Compile Include="Assets\Script\Tutorial\PuntosManagerTutorial.cs" />
+     <Compile Include="Assets\Script\Tutorial\Tutorial4Letras.cs" />
+     <Compile Include="Assets\Script\Tutorial\Tutorial4LetrasPuntos.cs" />
+     <Compile Include="Assets\Script\Tutorial\Tutorial5Letras.cs" />
+     <Compile Include="Assets\Script\Tutorial\Tutorial5LetrasPuntos.cs" />
+     <Compile Include="Assets\Script\Tutorial\Tutorial6Letras.cs" />
+     <Compile Include="Assets\Script\Tutorial\Tutorial6LetrasPuntos.cs" />
+     <Compile Include="Assets\Script\Tutorial\TutorialNivel.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />
@@ -420,6 +431,8 @@
      <None Include="Assets\TK2DROOT\tk2d\Shaders\Blend2TexVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2dUI\Shaders\DepthMaskSolid.shader" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito24.fnt" />
+     <None Include="Assets\Plugins\readme.txt" />
+     <None Include="Assets\Plugins\UnbiasedTime\UnbiasedTime_UnityPro.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\resources\BlendVertexColor.shader" />
      <None Include="Assets\unity-ui-extensions\Shaders\UIImageCrop.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
@@ -440,6 +453,10 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{EBA67E34-C505-C7D6-B92F-485552BA29D4}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

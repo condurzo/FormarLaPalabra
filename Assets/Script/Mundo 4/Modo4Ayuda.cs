@@ -86,7 +86,7 @@ public class Modo4Ayuda : MonoBehaviour {
 	}
 
 	void Start(){
-		AyudaBool1 = true;
+		
 
 
 		#region GuardarLetras
@@ -5937,6 +5937,7 @@ public class Modo4Ayuda : MonoBehaviour {
 	}
 
 	void Update(){
+		AyudaBool1 = true;
 
 		#region RandomNumber
 
@@ -7899,7 +7900,7 @@ public class Modo4Ayuda : MonoBehaviour {
 			}
 			tempMonedas = Monedas - 3;
 			PlayerPrefs.SetInt ("Monedas",tempMonedas);
-			Application.LoadLevel ("Nivel4");
+			TextoAyuda1.SetActive (false);
 		}
 
 	}
@@ -9411,7 +9412,7 @@ public class Modo4Ayuda : MonoBehaviour {
 			}
 			tempMonedas = Monedas - 5;
 			PlayerPrefs.SetInt ("Monedas", tempMonedas);
-			Application.LoadLevel ("Nivel4");
+			TextoAyuda2.SetActive (false);
 		}
 	}
 
@@ -10925,7 +10926,7 @@ public class Modo4Ayuda : MonoBehaviour {
 		}
 			tempMonedas = Monedas - 8;
 			PlayerPrefs.SetInt ("Monedas", tempMonedas);
-			Application.LoadLevel ("Nivel4");
+			TextoAyuda3.SetActive (false);
 		}
 	}
 
@@ -12437,7 +12438,7 @@ public class Modo4Ayuda : MonoBehaviour {
 		}
 			tempMonedas = Monedas - 12;
 			PlayerPrefs.SetInt ("Monedas", tempMonedas);
-			Application.LoadLevel ("Nivel4");
+			TextoAyuda4.SetActive (false);
 		}
 	}
 	#endregion
@@ -13948,7 +13949,7 @@ public class Modo4Ayuda : MonoBehaviour {
 		}
 			tempMonedas = Monedas - 15;
 			PlayerPrefs.SetInt ("Monedas", tempMonedas);
-			Application.LoadLevel ("Nivel4");
+			TextoAyuda5.SetActive (false);
 		}
 	}
 	#endregion

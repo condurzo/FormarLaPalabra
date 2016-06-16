@@ -52,6 +52,7 @@ public class Modo1 : MonoBehaviour {
 
 	public string Palabra;
 
+	public int Vidas;
 
 	public int mostrador;
 
@@ -95,13 +96,19 @@ public class Modo1 : MonoBehaviour {
 	void AtrasLose(){
 			Modo1Puntos.Victoria = false;
 			CountdownTimer_CSHARP.TerminoPartida = false;
+			
 			Application.LoadLevel ("SelectorMundos");
 	}
 
 	void ReloadLevel(){
 		Modo1Puntos.Victoria = false;
 		CountdownTimer_CSHARP.TerminoPartida = false;
-		Application.LoadLevel("Nivel1");
+		if (Vidas > 0) {
+			Application.LoadLevel("Nivel1");
+		} else {
+			Application.LoadLevel ("SelectorMundos");
+		}
+
 	}
 
 
@@ -427,6 +434,6 @@ public class Modo1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		Vidas = PlayerPrefs.GetInt ("Vidas");
 	}
 }

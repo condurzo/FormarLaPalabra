@@ -42,6 +42,7 @@ namespace GS
 		public GameObject Ocultar;
 		public GameObject viewLeaderboardGO;
 		public bool isConnected;
+		public bool conectado;
 
         // Info Text
         public Text infoText;
@@ -49,17 +50,29 @@ namespace GS
         delegate void LoadPictureCallback(Texture2D texture, int index);
 
         void Start(){
+			//FB.Init ();
+			//PROBAR UN BOOL STATICO LLAMADO DE OTRA CLASE. 
 			if (PlayerPrefs.GetInt ("LogueoUnaVez") == 1) {
-				InitNLogin();
+				conectado = true;
+//				Ocultar.SetActive (true);
+//				fbLogout.SetActive(true);
+//				fbLogoutDos.SetActive(true);
+//				InitNLogin();
+			}
+            SetButtonsListners();
+            SetFBItems(false);
+        }
+
+		void Update(){
+			if (conectado) {
 				Ocultar.SetActive (true);
 				fbLogout.SetActive(true);
 				fbLogoutDos.SetActive(true);
+				InitNLogin();
+				conectado = false;
 			}
-			FB.Init ();
-            SetButtonsListners();
-            SetFBItems(false);
+		}
 
-        }
         void SetInfoText(string msg)
         {
             infoText.gameObject.SetActive(true);
@@ -432,11 +445,13 @@ namespace GS
 
         }
         public void LogoutFB(){
-            FB.LogOut();
-            SetFBItems(false);
-            ReloadLeaderboard();
-            ReloadInvite();
-			PlayerPrefs.SetInt ("LogueoUnaVez", 0);
+			if (PlayerPrefs.GetInt ("LogueoUnaVez") == 1) {
+				FB.LogOut ();
+				SetFBItems (false);
+				ReloadLeaderboard ();
+				ReloadInvite ();
+				PlayerPrefs.SetInt ("LogueoUnaVez", 0);
+			}
         }
         void ReloadLeaderboard()
         {
