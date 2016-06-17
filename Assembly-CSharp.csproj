@@ -252,6 +252,7 @@
      <Compile Include="Assets\Script\SelectorMundos\ManagerSelectorMundos.cs" />
      <Compile Include="Assets\Script\Splash\AnimacionBolita.cs" />
      <Compile Include="Assets\Script\Splash\Splash.cs" />
+     <Compile Include="Assets\Script\Tutorial\MonedasTutorial.cs" />
      <Compile Include="Assets\Script\Tutorial\PuntosManagerTutorial.cs" />
      <Compile Include="Assets\Script\Tutorial\Tutorial4Letras.cs" />
      <Compile Include="Assets\Script\Tutorial\Tutorial4LetrasPuntos.cs" />

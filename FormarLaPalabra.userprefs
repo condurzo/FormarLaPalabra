@@ -1,40 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Demo/SampleTimerNew.cs">
-    <Files>
-      <File FileName="Assets/Plugins/Demo/SampleTimerNew.cs" Line="22" Column="108" />
-      <File FileName="Assets/Plugins/Demo/SampleTimer.cs" Line="14" Column="3" />
-      <File FileName="Assets/Script/BorrarTest.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Tutorial/Tutorial4Letras.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Tutorial/Tutorial4LetrasPuntos.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Tutorial/Tutorial5Letras.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Tutorial/Tutorial5LetrasPuntos.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Tutorial/Tutorial6LetrasPuntos.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Tutorial/Tutorial6Letras.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Splash/Splash.cs" Line="20" Column="35" />
-      <File FileName="Assets/Script/SelectorMundos/ManagerAjustes.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Others/ManagerTutorial.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Others/PuntosManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Tutorial/PuntosManagerTutorial.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/SelectorMundos/ManagerSelectorMundos.cs" Line="193" Column="24" />
-      <File FileName="Assets/Script/Mundo 1/Nivel 7 L/Modo1.cs" Line="80" Column="43" />
-      <File FileName="Assets/Script/Mundo 2/Nivel 8 L/Modo2.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Mundo 3/Modo3.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Mundo 4/Modo4.cs" Line="523" Column="40" />
-      <File FileName="Assets/Script/Others/CountdownTimer_CSHARP.cs" Line="136" Column="6" />
-      <File FileName="Assets/Script/SelectorMundos/BackButton.cs" Line="26" Column="31" />
-      <File FileName="Assets/Script/Mundo 1/Nivel 7 L/Modo1Ayuda.cs" Line="4585" Column="21" />
-      <File FileName="Assets/Script/Mundo 2/Nivel 8 L/Modo2Ayuda.cs" Line="6764" Column="34" />
-      <File FileName="Assets/Script/Mundo 3/Modo3Ayuda.cs" Line="12901" Column="15" />
-      <File FileName="Assets/Script/Mundo 4/Modo4Ayuda.cs" Line="5940" Column="21" />
-      <File FileName="Assets/Script/Mundo 1/Nivel 7 L/Modo1Monedas.cs" Line="13" Column="82" />
-      <File FileName="Assets/Script/Others/FindVidas.cs" Line="18" Column="77" />
-      <File FileName="Assets/FBManager/Scripts/FBManager.cs" Line="488" Column="81" />
-      <File FileName="Assets/FacebookSDK/Examples/Scripts/SubMenus/DialogShare.cs" Line="33" Column="48" />
-      <File FileName="Assets/Script/Mundo 1/Nivel 7 L/Modo1Puntos.cs" Line="495" Column="42" />
-      <File FileName="Assets/FBManager/Scripts/Constants.cs" Line="16" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
